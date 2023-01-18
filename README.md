@@ -1,6 +1,6 @@
 # Captain Hook
 
-Captain Hook is a Webhook proxy written in Node.js that allows developers to receive Webhooks on their local machines simultaneously and without needing to constantly update URLs.
+Captain Hook is a Webhook proxy written in Node.js that allows developers to receive them on their local machines simultaneously and without needing to constantly update URLs.
 
 ## Installation
 
