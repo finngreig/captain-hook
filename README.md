@@ -23,6 +23,7 @@ TODO
 - [ ] Add support for custom user middlewares
 - [ ] Parse CLI arguments
 - [ ] Read client config from file
+- [ ] Publish on NPM
 
 ## Contributing
 
