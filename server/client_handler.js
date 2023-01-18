@@ -1,7 +1,7 @@
 import { Server } from "socket.io";
 import fastq from "fastq";
 
-class ClientHandler {
+export default class ClientHandler {
     port;
     #io;
     #sockets = [];
@@ -9,9 +9,9 @@ class ClientHandler {
     
     constructor(port) {
         this.port = port;
-        this.io = new Server(this.port);
+        this.#io = new Server(this.port);
 
-        this.io.on("connection", socket => {
+        this.#io.on("connection", socket => {
             sockets.push(socket);
         });
     }
@@ -31,6 +31,6 @@ class ClientHandler {
     }
 
     async send(object) {
-        await this.#queue.push(object);
+        await this.#queue.push(this.#createClientObject(object));
     }
 }
