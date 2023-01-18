@@ -8,6 +8,9 @@ const app = express();
 
 const clientHandler = new ClientHandler(INTERNAL_PORT);
 
+/**
+ * This endpoint handles all our webhooks - third party services should be pointed to `https://{host}/webhook`
+ */
 app.post("/webhook", async (req, res) => {
     await clientHandler.send(req);
     return res.status(200);
