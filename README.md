@@ -16,6 +16,14 @@ npm install captain-hook-client     # for the local client
 
 TODO
 
+## Roadmap
+
+- [ ] Write client
+- [ ] Add authentication
+- [ ] Add support for custom user middlewares
+- [ ] Parse CLI arguments
+- [ ] Read client config from file
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
